@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Reality/Verilog Workspace/Booth_Multiplier/Booth_Multiplier.sim/sim_1/impl/func/xsim/tb_booth_radix_2_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bintobcd
+INFO: [VRFC 10-311] analyzing module display_controller
+INFO: [VRFC 10-311] analyzing module radix_2_booth
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Reality/Verilog Workspace/Booth_Multiplier/Booth_Multiplier.srcs/sim_1/new/tb_booth_radix_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_booth_radix_2

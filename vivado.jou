@@ -1,0 +1,145 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Aug 13 13:50:06 2024
+# Process ID: 7488
+# Current directory: C:/Reality/Verilog Workspace/Booth_Multiplier
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1392 C:\Reality\Verilog Workspace\Booth_Multiplier\Booth_Multiplier.xpr
+# Log file: C:/Reality/Verilog Workspace/Booth_Multiplier/vivado.log
+# Journal file: C:/Reality/Verilog Workspace/Booth_Multiplier\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Reality/Verilog Workspace/Booth_Multiplier/Booth_Multiplier.xpr}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+place_ports clk W5
+place_ports i_start V17
+place_ports o_valid U16
+place_ports reset W19
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list o_valid]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list i_start]]
+place_ports {AN[0]} U2
+place_ports {AN[1]} U4
+place_ports {AN[2]} V4
+place_ports {AN[3]} W4
+place_ports {digit_switch[0]} W7
+place_ports {digit_switch[1]} W6
+place_ports {digit_switch[2]} U8
+place_ports {digit_switch[3]} V8
+place_ports {digit_switch[4]} U5
+place_ports {digit_switch[5]} V5
+place_ports {digit_switch[6]} U7
+set_property IOSTANDARD LVCMOS33 [get_ports [list {digit_switch[6]} {digit_switch[5]} {digit_switch[4]} {digit_switch[3]} {digit_switch[2]} {digit_switch[1]} {digit_switch[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {AN[3]} {AN[2]} {AN[1]} {AN[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {i_M[3]} {i_M[2]} {i_M[1]} {i_M[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {i_Q[3]} {i_Q[2]} {i_Q[1]} {i_Q[0]}]]
+place_ports {i_M[3]} R2
+place_ports {i_M[2]} T1
+place_ports {i_M[1]} U1
+place_ports {i_M[0]} W2
+place_ports {i_Q[3]} R3
+place_ports {i_Q[2]} T2
+place_ports {i_Q[1]} T3
+place_ports {i_Q[0]} V2
+reset_run synth_1
+save_constraints -force
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Reality/Verilog Workspace/Booth_Multiplier/Booth_Multiplier.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Reality/Verilog Workspace/Booth_Multiplier/Booth_Multiplier.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+launch_simulation -mode post-implementation -type functional
+source tb_booth_radix_2.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source tb_booth_radix_2.tcl
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/tb_booth_radix_2/DUT/main/for_display}} 
+relaunch_sim
+relaunch_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Reality/Verilog Workspace/Booth_Multiplier/Booth_Multiplier.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Reality/Verilog Workspace/Booth_Multiplier/Booth_Multiplier.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Reality/Verilog Workspace/Booth_Multiplier/Booth_Multiplier.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Reality/Verilog Workspace/Booth_Multiplier/Booth_Multiplier.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim
+launch_simulation
+source tb_booth_radix_2.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_design
+launch_simulation -mode post-implementation -type functional
+source tb_booth_radix_2.tcl
+relaunch_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_sim
+close_sim
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+source tb_booth_radix_2.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Reality/Verilog Workspace/Booth_Multiplier/Booth_Multiplier.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+close_sim

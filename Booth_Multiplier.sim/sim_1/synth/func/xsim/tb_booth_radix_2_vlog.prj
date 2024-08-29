@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_booth_radix_2_func_synth.v" \
+"../../../../../Booth_Multiplier.srcs/sim_1/new/tb_booth_radix_2.v" \
+
+# Do not sort compile order
+nosort
