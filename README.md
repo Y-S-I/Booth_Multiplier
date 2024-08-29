@@ -3,5 +3,4 @@
 ![BM_image](https://github.com/user-attachments/assets/5e2e56a0-ad39-4fbd-964f-3bee23a8cc2c)
 
 # Project Demo Video
-[https://github.com/user-attachments/assets/4bbb590a-7448-4bb4-84bd-77d6b52f9aa1](https://github.com/user-attachments/assets/7f3f87da-1d60-4e18-96dc-a5903a2ad657
-)
+https://github.com/user-attachments/assets/a4a9764a-6d4c-40d6-b816-670629a3406e
